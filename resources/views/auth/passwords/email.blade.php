@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -44,4 +44,32 @@
         </div>
     </div>
 </div>
+@endsection --}}
+@extends('layouts.app')
+@section('content')
+    <section id="reset-password">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 col-s-1 text-center">
+                            <img class="image " src="{{ asset('img/Authentication.svg') }}" alt="">
+                        </div>
+                        <div class="col-6 col-s-1">
+                            <h3 class="text-center">Reset Password</h3>
+
+                            <form action="">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control my-2" id="email"
+                                    placeholder="example@tohoku.com">
+                                <div class="d-grid my-4">
+                                    <button type="submit" class="btn">Reset Link</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
