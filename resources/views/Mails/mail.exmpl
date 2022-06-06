@@ -1,0 +1,9 @@
+@component('mail::message')
+Hello **{{$name}}**,  {{-- use double space for line break --}}
+This is link for reset password!
+
+@component('mail::button', ['url' => $link])
+@endcomponent
+Sincerely,
+Dadang Jebred.
+@endcomponent
