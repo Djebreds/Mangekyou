@@ -181,7 +181,7 @@ input[id="password"].is-invalid {
     font-weight: 300;
 }
 
-.form-field input {
+.form-field input[type="text"], input[type="password"], input[type="email"] {
     background: #F8F8F8;
     border-radius: 8px;
     height: 45px;
@@ -245,6 +245,12 @@ input, input:focus {
 .form-control {
     position: relative;
     padding-right: 45px !important;
+}
+
+form .field-check a {
+    color: var(--font-color-a);
+    font-size: 14px;
+    text-decoration: none;
 }
 
 
