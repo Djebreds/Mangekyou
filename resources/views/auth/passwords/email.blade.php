@@ -51,19 +51,31 @@
         <div class="container">
             <div class="card">
                 <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     <div class="row">
                         <div class="col-6 col-s-1 text-center">
-                            <img class="image " src="{{ asset('img/Authentication.svg') }}" alt="">
+                            <img class="image" src="{{ asset('img/Authentication.svg') }}" alt="">
                         </div>
                         <div class="col-6 col-s-1">
                             <h3 class="text-center">Reset Password</h3>
 
-                            <form action="">
+                            <form class="form-field" method="POST" action="{{ route('password.email') }}">
+                                @csrf
                                 <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control my-2" id="email"
-                                    placeholder="example@tohoku.com">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                                    name="email" value="{{ old('email') }}" required autocomplete="email"
+                                    placeholder="Email">
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
                                 <div class="d-grid my-4">
-                                    <button type="submit" class="btn">Reset Link</button>
+                                    <button type="submit" class="btn btn-field">Reset Link</button>
                                 </div>
                             </form>
                         </div>

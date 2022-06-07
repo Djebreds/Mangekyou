@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+    /* Bg */
+    --background-color: #FFFFFB;
+    /* Bg Card */
+    --background-color-card: #FFFFFF;
+    --card-radius: 15px;
+    --card-shadow: 1px 1px 22px -7px rgba(0, 0, 0, 0.25);
+
+    /* Font H1 */
+    --font-color-h1: #203A39;
+    --font-size-h1: 46px;
+    --font-weight-h1: 600;
+
+    /* Font H2 */
+    --font-color-h2: #0D5C63;
+    --font-size-h2: 40px;
+    --font-weight-h2: 600;
+
+    /* Font H3 */
+    --font-color-h3: #0D5C63;
+    --font-size-h3: 30px;
+    --font-weight-h3: 500;
+
+    /* Font H4 */
+    --font-color-h4: #247B7B;
+    --font-size-h4: 24px;
+    --font-weight-h4: 500;
+
+    /*  Font P */
+    --font-color-p: #44A1A0;
+    --font-weight-p: 400;
+
+    /*  Font H5  */
+    --font-color-h5: #0D5c63;
+    --font-size-h5: 20px;
+    --font-weight-h5: 600;
+
+    /*  Link (href)  */
+    --font-color-a: #247B7B;
+    --font-weight-a: 500;
+
+    /*  Button gradient  */
+    --button-bg-color-g: linear-gradient(90deg, #309791 -18.16%, rgba(48, 151, 145, 0.3) 116.32%);
+    --button-font-color-g: #FFFFFF;
+    --button-font-size-g: 18px;
+    --button-shadow-g: 0px 4px 2px rgba(4, 4, 4, 0.44);
+    --button-radius-g: 10px;
+
+    /*  Button half-transparent  */
+    --button-bg-color-t: #DDEEEB;
+    --button-font-color-t: #0D5C63;
+    --button-font-size-t: 18px;
+    --button-shadow-t: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --button-radius-t: 10px;
+
+    /*  Button Standard  */
+    --button-bg-color: #44A1A0;
+    --button-font-color: #FFFFFB;
+    --button-radius: 8px;
+
+    /*  Button Google  */
+    --button-shadow-google: 0px 0px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+/************************** responsive *******************************/
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    font-weight: var(--font-weight-h4);
+    color: var(--font-color-h4);
+    font-size: var(--font-size-h4);
+    
+}
+
+.card {
+    background: var(--background-color-card);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-radius);
+}
+
+/* header title */
+.header, p, h3 {
+    margin: 0;
+}
+
+.header h3 {
+    color: var(--font-color-h3);
+    font-weight: var(--font-weight-h3);
+}
+
+.header p {
+    color: var(--font-color-p);
+    font-weight: var(--font-weight-p);
+}
+
+.header p a {
+    font-weight: var(--font-weight-a);
+    color: var(--font-color-a);
+    text-decoration: none;
+}
+
+input[id="password"].is-invalid {
+    background-image: none !important;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #0D5c63;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #0D5c63;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/**** line ******/
+.line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--font-color-p);
+    font-size: 13px;
+}
+
+.line::before,
+.line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.line:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.line:not(:empty)::after {
+    margin-left: .25em;
+}
+
+
+
+/*************************/
+
+
+
+/* icon google */
+.i-google {
+    background: url('../img/icon/Google.svg') no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.btn-google {
+    background: white;
+    font-weight: 500;
+    height: 42px;
+    font-size: 15px;
+    color: #0c5460;
+    border: 1px #86C1C1 solid;
+    border-radius: var(--button-radius);
+    align-items: center;
+}
+/***************/
+
+/******* Form input ******/
+.form-field label {
+    font-size: 14px;
+    color: var(--font-color-p);
+    font-weight: 300;
+}
+
+.form-field input {
+    background: #F8F8F8;
+    border-radius: 8px;
+    height: 45px;
+    border: 0;
+}
+
+/*.form-field input:focus {*/
+/*    border-radius: 10px;*/
+/*    outline: #0f6674 solid 1px;*/
+/*}*/
+input, input:focus {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: .1s;
+}
+/* Smooth outline with box-shadow: */
+.form-control:focus {
+    box-shadow: 0 0 3pt 2pt #86C1C1;
+}
+
+.form-control.is-invalid {
+    border: 1px rgba(242,103,103,1) solid;
+    background-color: #FFF2F2;
+}
+
+/* place holder form field */
+::-webkit-input-placeholder { /* Edge */
+    font-weight: 300;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  font-weight: 300;
+}
+
+::placeholder {
+    font-weight: 300;
+}
+/***************************/
+
+.form-field .btn-field {
+    background: var(--button-bg-color);
+    color: var(--button-font-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: var(--button-radius);
+}
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon i {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+
+}
+
+.form-control {
+    position: relative;
+    padding-right: 45px !important;
+}
+
+
+/**************************/
+
+.policy p {
+    font-size: 14px;
+    color: var(--font-color-p);
+}
+
+.policy a {
+    color: var(--font-color-a);
+    font-weight: var(--font-weight-a);
+    text-decoration: none;
+}
+
+/* Button Verification */
+.btn-verification {
+    border-radius: 20px;
+    box-shadow: 0px 4px 14px -8px #000000;
+    background: #44A1A0;
+    color: white;
+    max-width: 300px;
+}
+
+.btn-verification h6, p {
+    padding: 0px !important;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.image-email {
+    max-width: 100%;
+}
+
+
+/* Foooter */
+footer .copyright {
+    color: #0D5c63;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/***********/
+
+/* ICON  */
+
+.i-eye-slash {
+    display: inline-block;
+    background: url('../img/icon/password-hide.svg') no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+.i-eye {
+    display: inline-block;
+    background: url("../img/icon/password-unhide.svg") no-repeat;
+    height: 21px;
+    width: 21px;
+}
+
+.i-email {
+    display: inline-block;
+    background: url("../img/icon/Subtract.svg") no-repeat;
+    height: 32px;
+    width: 38px;
+}
+
+.i-phone {
+    display: inline-block;
+    background: url("../img/icon/Vector.svg") no-repeat;
+    height: 32px;
+    width: 38px;
+}
+
+/* background image */
+
+.background-image {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .background-image {
+        display: block;
+    }
+
+    .image-email {
+        max-width: 50%;
+    }
+
+    .btn-verification {
+        border-radius: 20px;
+        box-shadow: 0px 4px 14px -8px #000000;
+        background: #44A1A0;
+        color: white;
+        height: 80px;
+        max-width: 400px;
+    }
+
+    .btn-verification h6, p {
+        padding: 0px !important;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+
+    .background-image h4{
+        margin-top: 1rem;
+        color: #0f6674;
+        font-size: 20px;
+        font-weight: var(--font-weight-h4);
+    }
+
+    .background-image p {
+        color: var(--font-color-p);
+        font-size: 13px;
+        font-weight: var(--font-weight-p);
+    }
+
+    .card {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .background-image img {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1282px){
+    /* For desktop: */
+    .background-image {
+        display: block;
+    }
+
+    .image-email {
+        max-width: 80%;
+    }
+
+
+    .btn-verification {
+        border-radius: 20px;
+        box-shadow: 0px 4px 14px -8px #000000;
+        background: #44A1A0;
+        color: white;
+        height: 60px;
+        max-width: 400px;
+    }
+
+    .btn-verification h6, p {
+        padding: 0px !important;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .background-image h4{
+        margin-top: 1rem;
+        color: #0f6674;
+        font-size: var(--font-size-h4);
+        font-weight: var(--font-weight-h4);
+    }
+
+    .background-image p {
+        color: var(--font-color-p);
+        font-size: 14px;
+        font-weight: var(--font-weight-p);
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-header-title {
+        margin-top: 0.5rem !important;
+    }
+
+    .background-image img {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .policy {
+        margin-bottom: 0 !important;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
