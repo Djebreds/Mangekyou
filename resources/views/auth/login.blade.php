@@ -19,8 +19,8 @@
                     <div class="card border-0">
                         <div class="card-header-title mt-4">
                             <header class="header text-center">
-                                <h3>Login Tohoku</h3>
-                                <p>Don't have a Tohoku account? <a href="#">Register</a></p>
+                                <h3>Login</h3>
+                                <p>Don't have a Tohoku account? <a href="{{ route('register') }}">Register</a></p>
                             </header>
                         </div>
                         <div class="card-body">
@@ -68,7 +68,7 @@
                                         <div class="forgot">
                                             @if (Route::has('password.request'))
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                    {{ __('Forgot Your Password?') }}
+                                                    {{ __('Forgot your password?') }}
                                                 </a>
                                             @endif
                                         </div>
@@ -80,7 +80,7 @@
                                     </button>
                                 </div>
                                 <div class="line my-2">
-                                    <span>or login with </span>
+                                    <span>Or login with </span>
                                 </div>
                                 <div class="button d-grid">
                                     <button type="submit" class="btn btn-google d-flex justify-content-center">
