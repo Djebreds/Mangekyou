@@ -177,22 +177,22 @@ input[id="password"].is-invalid {
 /******* Form input ******/
 .form-field label {
     font-size: 14px;
-    color: var(--font-color-p);
-    font-weight: 300;
+    color: var(--font-color-a);
+    font-weight: 400;
 }
 
-.form-field input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"] {
     background: #F8F8F8;
     border-radius: 8px;
     height: 45px;
-    border: 0;
+    border: 1px #86C1C1 solid;
 }
 
 /*.form-field input:focus {*/
 /*    border-radius: 10px;*/
 /*    outline: #0f6674 solid 1px;*/
 /*}*/
-input, input:focus {
+input:focus {
     border: none;
     border-radius: 10px;
     outline: none;

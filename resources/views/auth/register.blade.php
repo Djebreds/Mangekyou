@@ -20,7 +20,7 @@
                         <div class="card-header-title mt-4">
                             <header class="header text-center">
                                 <h3>Register Now</h3>
-                                <p>Already have a account Tohoku? <a href="#">Sign-in</a></p>
+                                <p>Already have a account Tohoku? <a href="{{ route('login') }}">Login</a></p>
                             </header>
                         </div>
                         <div class="card-body">
@@ -30,7 +30,7 @@
                                 </button>
                             </div>
                             <div class="line my-2">
-                                <span>or register with</span>
+                                <span>Or register with</span>
                             </div>
                             <form class="form-group form-field" method="POST" action="{{ route('register') }}">
                                 @csrf
@@ -38,12 +38,24 @@
                                     <label for="name" class="col-sm-2 col-form-label">{{ __('Name') }}</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control @error('name') is-invalid @enderror"
-                                            name="name" id="name" placeholder="username" value="{{ old('name') }}"
-                                            autofocus>
+                                            name="name" id="name" placeholder="username" value="{{ old('name') }}">
                                         @error('name')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
                                             </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="my-1 row">
+                                    <label for="phone" class="col-sm-2 col-form-label">{{ __('Phone Number') }}</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control @error('phone') is-invalid @enderror"
+                                               name="phone" id="phone" placeholder="+62"
+                                               value="{{ old('phone') }}" autocomplete="email">
+                                        @error('phone')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
                                         @enderror
                                     </div>
                                 </div>
