@@ -32,7 +32,6 @@
 <body>
     <div id="app">
 
-<<<<<<< HEAD
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm"> --}}
         {{-- <div class="container"> --}}
         {{-- <a class="navbar-brand" href="{{ url('/') }}"> --}}
@@ -45,7 +44,7 @@
         {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
         {{-- <!-- Left Side Of Navbar --> --}}
         {{-- <ul class="navbar-nav me-auto"> --}}
-=======
+
 {{--        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
 {{--            <div class="container">--}}
 {{--                <a class="navbar-brand" href="{{ url('/') }}">--}}
@@ -87,7 +86,6 @@
 {{--            </div>--}}
 {{--        </div>--}}
 {{--    </nav>--}}
->>>>>>> d9cae3b (modified verification email)
 
         {{-- </ul> --}}
 

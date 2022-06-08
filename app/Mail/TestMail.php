@@ -28,7 +28,7 @@ class TestMail extends Mailable
      */
     public function build()
     {
-        return $this->from('refi.ahmad.fauzn@gmail.com', 'TOHOKU')
+        return $this->from('support@tohoku.com', 'TOHOKU')
             ->subject('Tohoku Account Reset Password')
             ->markdown('mails.exmpl')
             ->with([

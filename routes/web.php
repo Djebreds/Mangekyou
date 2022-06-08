@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,11 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('admin/dashboard', function () {
+    return view('admin.dashboard');
+});
+
+Route::get('/coba', function () {
+    return view('admin.test');
+});
+
+Route::get('/test', function () {
+    return view('verify');
+});
 
 Auth::routes();
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('profile', function() {
-
+Route::get('profile', function () {
 })->middleware('verified');
