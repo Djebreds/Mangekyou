@@ -11,7 +11,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('css/admin-style/app.css') }}">
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
 
 <body id="body-pd">
@@ -19,20 +19,18 @@
         <div class="header__toggle">
             <i class='bx bx-menu' id="header-toggle"></i>
         </div>
-
         <div class="header__img">
             <img src="assets/img/perfil.jpg" alt="">
         </div>
     </header>
 
-    <div class="l-navbar " id="nav-bar">
+    <aside class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
                 <a href="#" class="nav__logo">
                     <i class='logo nav__icon '></i>
                     <span class="nav__logo-name">Tohoku Admin</span>
                 </a>
-
                 <div class="nav__list">
                     <a href="#" class="nav__link active">
                         <i class='bx bx-grid-alt nav__icon'></i>
@@ -65,22 +63,23 @@
                     </a>
                 </div>
             </div>
-
             <a href="#" class="nav__link">
                 <i class='bx bx-log-out nav__icon'></i>
                 <span class="nav__name">Log Out</span>
             </a>
         </nav>
-    </div>
+    </aside>
 
-    <main>
-        <div class="card">
-            <div class="card-body">
-                <h1>Components</h1>
-            </div>
-        </div>
-
+    <main class="main">
+        @yield('content')
     </main>
+
+    <footer class="text-center">
+        <div class="copyright py-3">
+            Copyright © Tohoku 2022
+        </div>
+    </footer>
+
 
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

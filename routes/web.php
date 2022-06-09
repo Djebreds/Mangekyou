@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
+    return view('admin.page-dashboard.dashboard');
 });
 
 Route::get('/coba', function () {
