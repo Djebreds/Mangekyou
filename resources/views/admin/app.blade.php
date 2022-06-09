@@ -31,7 +31,7 @@
                     <i class='logo nav__icon '></i>
                     <span class="nav__logo-name">Tohoku Admin</span>
                 </a>
-                <div class="nav__list">
+                <div class="nav__list mt-4">
                     <a href="#" class="nav__link active">
                         <i class='bx bx-grid-alt nav__icon'></i>
                         <span class="nav__name">Dashboard</span>
