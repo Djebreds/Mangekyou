@@ -27,46 +27,95 @@
     <aside class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="#" class="nav__logo">
-                    <i class='logo nav__icon '></i>
-                    <span class="nav__logo-name">Tohoku Admin</span>
-                </a>
+                <div class="logo">
+                    <a href="#" class="nav__logo">
+                        <i class='logo nav__icon '></i>
+                        <span class="nav__logo-name">Tohoku Admin</span>
+                    </a>
+                </div>
+
                 <div class="nav__list mt-4">
                     <a href="#" class="nav__link active">
-                        <i class='bx bx-grid-alt nav__icon'></i>
+                        <i class='i-dashboard nav__icon'></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
 
                     <a href="#" class="nav__link">
-                        <i class='bx bx-user nav__icon'></i>
-                        <span class="nav__name">Users</span>
+                        <i class='i-email nav__icon'></i>
+                        <span class="nav__name">Email</span>
                     </a>
 
                     <a href="#" class="nav__link">
-                        <i class='bx bx-message-square-detail nav__icon'></i>
-                        <span class="nav__name">Messages</span>
+                        <i class='i-list nav__icon'></i>
+                        <span class="nav__name">Customer</span>
                     </a>
 
                     <a href="#" class="nav__link">
-                        <i class='bx bx-bookmark nav__icon'></i>
-                        <span class="nav__name">Favorites</span>
+                        <i class='i-m-user nav__icon'></i>
+                        <span class="nav__name">User</span>
                     </a>
 
                     <a href="#" class="nav__link">
-                        <i class='bx bx-folder nav__icon'></i>
-                        <span class="nav__name">Data</span>
+                        <i class='i-category nav__icon'></i>
+                        <span class="nav__name">Category</span>
                     </a>
 
                     <a href="#" class="nav__link">
-                        <i class='bx bx-bar-chart-alt-2 nav__icon'></i>
-                        <span class="nav__name">Analytics</span>
+                        <i class='i-list nav__icon'></i>
+                        <span class="nav__name">Product</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-product nav__icon'></i>
+                        <span class="nav__name">Product</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-promo nav__icon'></i>
+                        <span class="nav__name">Promo</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-order nav__icon'></i>
+                        <span class="nav__name">Order</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-payment nav__icon'></i>
+                        <span class="nav__name">Payment Method</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-invoice nav__icon'></i>
+                        <span class="nav__name">Invoice</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-list nav__icon'></i>
+                        <span class="nav__name">Page</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-landing-page nav__icon'></i>
+                        <span class="nav__name">Landing Page</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-home nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-chat nav__icon'></i>
+                        <span class="nav__name">Chatting Service</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='i-help nav__icon'></i>
+                        <span class="nav__name">Help</span>
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav__link">
-                <i class='bx bx-log-out nav__icon'></i>
-                <span class="nav__name">Log Out</span>
-            </a>
         </nav>
     </aside>
 

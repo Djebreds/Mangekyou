@@ -21,6 +21,160 @@
     --z-fixed: 100;
 }
 
+/* Icon */
+
+.i-dashboard {
+    background: url("../../img/icon/icon-admin/dashboard.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-email {
+    background: url("../../img/icon/icon-admin/email.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-category {
+    background: url("../../img/icon/icon-admin/category.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-chat {
+    background: url("../../img/icon/icon-admin/chat.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-e-commerse {
+    background: url("../../img/icon/icon-admin/e-commerse.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-help {
+    background: url("../../img/icon/icon-admin/help.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-home {
+    background: url("../../img/icon/icon-admin/home.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-invoice {
+    background: url("../../img/icon/icon-admin/invoice.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-landing-page {
+    background: url("../../img/icon/icon-admin/landing-page.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-list {
+    background: url("../../img/icon/icon-admin/list.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-m-user {
+    background: url("../../img/icon/icon-admin/m-user.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-order {
+    background: url("../../img/icon/icon-admin/order.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-payment {
+    background: url("../../img/icon/icon-admin/payment.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-product {
+    background: url("../../img/icon/icon-admin/product.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-promo {
+    background: url("../../img/icon/icon-admin/promo.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-info {
+    background: url("../../img/icon/icon-admin/profile-info.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-logout {
+    background: url("../../img/icon/icon-admin/profile-logout.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-setting {
+    background: url("../../img/icon/icon-admin/profile-setting.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-user {
+    background: url("../../img/icon/icon-admin/profile-user.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
 /*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
@@ -85,6 +239,7 @@ a{
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed);
+    
 }
 
 
@@ -94,8 +249,19 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    overflow-y: scroll;
+    
 }
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 
 .nav__logo, .nav__link{
     display: grid;
@@ -128,7 +294,7 @@ a{
 }
 
 .nav__link:hover{
-    color: var(--white-color);
+    color: white;
 }
 
 
@@ -148,7 +314,9 @@ a{
 
 /*Active links*/
 .active{
-    color: var(--white-color);
+    color: white;
+    border-radius: 10px;
+    background: #54AcB1;
 }
 
 .active::before{
