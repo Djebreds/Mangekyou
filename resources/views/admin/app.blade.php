@@ -19,8 +19,27 @@
         <div class="header__toggle">
             <i class='bx bx-menu' id="header-toggle"></i>
         </div>
-        <div class="header__img">
-            <img src="assets/img/perfil.jpg" alt="">
+
+        <div class="profil d-flex">
+            <div class="header__img">
+                <img src="{{ URL::asset('img/Balloon.svg') }}" alt="">
+            </div>
+
+            <div class="nav-dropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Udin Petot
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
