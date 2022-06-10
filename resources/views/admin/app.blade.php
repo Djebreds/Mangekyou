@@ -35,75 +35,90 @@
                 </div>
 
                 <div class="nav__list mt-4">
-                    <a href="#" class="nav__link active">
+                    <a href="{{ route('admin.dashboard') }}" class="nav__link">
                         <i class='i-dashboard nav__icon'></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
 
-                    <a href="#" class="nav__link">
+                    <a href="{{ route('admin.email') }}" class="nav__link">
                         <i class='i-email nav__icon'></i>
                         <span class="nav__name">Email</span>
                     </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-list nav__icon'></i>
-                        <span class="nav__name">Customer</span>
-                    </a>
+                    <div class="accordion">
+                        <a href="#" class="hstack gap-4 m-4 dropdown">
+                            <i class='i-arrow rotate nav__icon'></i>
+                            <span class="accordion-name">Customers</span>
+                        </a>
+                    </div>
+                    <div class="panel">
+                        <a href="#" class="nav__link">
+                            <i class='i-m-user nav__icon'></i>
+                            <span class="nav__name">User</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-m-user nav__icon'></i>
-                        <span class="nav__name">User</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-e-commerse nav__icon'></i>
+                            <span class="nav__name">E-Commerse</span>
+                        </a>
+                    </div>
+
 
                     <a href="#" class="nav__link">
                         <i class='i-category nav__icon'></i>
                         <span class="nav__name">Category</span>
                     </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-list nav__icon'></i>
-                        <span class="nav__name">Product</span>
-                    </a>
+                    <div class="accordion">
+                        <a href="#" class="hstack gap-4 m-4 dropdown">
+                            <i class='i-arrow rotate nav__icon'></i>
+                            <span class="accordion-name">Shopping</span>
+                        </a>
+                    </div>
+                    <div class="panel">
+                        <a href="#" class="nav__link">
+                            <i class='i-product nav__icon'></i>
+                            <span class="nav__name">Products</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-product nav__icon'></i>
-                        <span class="nav__name">Product</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-promo nav__icon'></i>
+                            <span class="nav__name">Promo</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-promo nav__icon'></i>
-                        <span class="nav__name">Promo</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-order nav__icon'></i>
+                            <span class="nav__name">Order</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-order nav__icon'></i>
-                        <span class="nav__name">Order</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-payment nav__icon'></i>
+                            <span class="nav__name">Payment Method</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-payment nav__icon'></i>
-                        <span class="nav__name">Payment Method</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-invoice nav__icon'></i>
+                            <span class="nav__name">Invoice</span>
+                        </a>
+                    </div>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-invoice nav__icon'></i>
-                        <span class="nav__name">Invoice</span>
-                    </a>
+                    <div class="accordion">
+                        <a href="#" class="hstack gap-4 m-4 dropdown">
+                            <i class='i-arrow rotate nav__icon'></i>
+                            <span class="accordion-name">Pages</span>
+                        </a>
+                    </div>
+                    <div class="panel">
+                        <a href="#" class="nav__link">
+                            <i class='i-landing-page nav__icon'></i>
+                            <span class="nav__name">Landing Page</span>
+                        </a>
 
-                    <a href="#" class="nav__link">
-                        <i class='i-list nav__icon'></i>
-                        <span class="nav__name">Page</span>
-                    </a>
-
-                    <a href="#" class="nav__link">
-                        <i class='i-landing-page nav__icon'></i>
-                        <span class="nav__name">Landing Page</span>
-                    </a>
-
-                    <a href="#" class="nav__link">
-                        <i class='i-home nav__icon'></i>
-                        <span class="nav__name">Home</span>
-                    </a>
+                        <a href="#" class="nav__link">
+                            <i class='i-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </div>
 
                     <a href="#" class="nav__link">
                         <i class='i-chat nav__icon'></i>
@@ -129,7 +144,8 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
