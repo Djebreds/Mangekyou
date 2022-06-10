@@ -111,6 +111,14 @@
     height: 24px;
 }
 
+.i-official {
+    background: url("../../img/icon/icon-admin/official.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
 .i-order {
     background: url("../../img/icon/icon-admin/order.svg") no-repeat;
     display: inline-block;
@@ -215,6 +223,30 @@
     height: 24px;
 }
 
+.i-edit {
+    background: url("../../img/icon/icon-admin/edit.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-delete {
+    background: url("../../img/icon/icon-admin/delete.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-detail {
+    background: url("../../img/icon/icon-admin/detail.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
 /*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
@@ -232,6 +264,7 @@ body{
 a{
     text-decoration: none;
 }
+
 
 /*===== HEADER =====*/
 .header{

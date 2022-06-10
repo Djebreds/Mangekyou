@@ -36,6 +36,10 @@ Route::get('admin/e-commerse', function () {
     return view('admin.page-dashboard.e-commerse');
 })->name('admin.e-commerse');
 
+Route::get('admin/official', function () {
+    return view('admin.page-dashboard.official');
+})->name('admin.official');
+
 Route::get('admin/category', function () {
     return view('admin.page-dashboard.category');
 })->name('admin.category');

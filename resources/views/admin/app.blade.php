@@ -98,13 +98,13 @@
                             <i class='i-e-commerse nav__icon'></i>
                             <span class="nav__name">E-Commerse</span>
                         </a>
+
+                        <a href="{{ route('admin.official') }}" class="nav__link">
+                            <i class='i-official nav__icon'></i>
+                            <span class="nav__name">Official Store</span>
+                        </a>
                     </div>
 
-
-                    <a href="{{ route('admin.category') }}" class="nav__link">
-                        <i class='i-category nav__icon'></i>
-                        <span class="nav__name">Category</span>
-                    </a>
 
                     <div class="accordion">
                         <a href="#" class="hstack gap-4 m-4 dropdown">
@@ -116,6 +116,11 @@
                         <a href="{{ route('admin.product') }}" class="nav__link">
                             <i class='i-product nav__icon'></i>
                             <span class="nav__name">Products</span>
+                        </a>
+
+                        <a href="{{ route('admin.category') }}" class="nav__link">
+                            <i class='i-category nav__icon'></i>
+                            <span class="nav__name">Category</span>
                         </a>
 
                         <a href="{{ route('admin.promo') }}" class="nav__link">
