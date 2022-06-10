@@ -11,6 +11,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('css/admin-style/app.css') }}">
+
     <title>@yield('title')</title>
 </head>
 
@@ -19,26 +20,42 @@
         <div class="header__toggle">
             <i class='bx bx-menu' id="header-toggle"></i>
         </div>
-
-        <div class="profil d-flex">
+        <div class="profile d-flex">
             <div class="header__img">
-                <img src="{{ URL::asset('img/Balloon.svg') }}" alt="">
-            </div>
-
-            <div class="nav-dropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Udin Petot
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <div class="action">
+                    <div class="profile" onclick="menuToggle();">
+                        <img src="{{ URL::asset('img/Balloon.svg') }}" />
+                    </div>
+                    <div class="menu">
+                        <h3>Someone Famous<br /><span>Website Designer</span></h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class='ip-info'></i>
+                                    Info
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='ip-logout'></i>
+                                    Logout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='ip-setting'></i>
+                                    Setting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='ip-user'></i>
+                                    User
+                                </a>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -71,19 +88,19 @@
                         </a>
                     </div>
                     <div class="panel">
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.user') }}" class="nav__link">
                             <i class='i-m-user nav__icon'></i>
                             <span class="nav__name">User</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.e-commerse') }}" class="nav__link">
                             <i class='i-e-commerse nav__icon'></i>
                             <span class="nav__name">E-Commerse</span>
                         </a>
                     </div>
 
 
-                    <a href="#" class="nav__link">
+                    <a href="{{ route('admin.category') }}" class="nav__link">
                         <i class='i-category nav__icon'></i>
                         <span class="nav__name">Category</span>
                     </a>
@@ -95,27 +112,27 @@
                         </a>
                     </div>
                     <div class="panel">
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.product') }}" class="nav__link">
                             <i class='i-product nav__icon'></i>
                             <span class="nav__name">Products</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.promo') }}" class="nav__link">
                             <i class='i-promo nav__icon'></i>
                             <span class="nav__name">Promo</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.order') }}" class="nav__link">
                             <i class='i-order nav__icon'></i>
                             <span class="nav__name">Order</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.payment') }}" class="nav__link">
                             <i class='i-payment nav__icon'></i>
                             <span class="nav__name">Payment Method</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.invoice') }}" class="nav__link">
                             <i class='i-invoice nav__icon'></i>
                             <span class="nav__name">Invoice</span>
                         </a>
@@ -128,23 +145,23 @@
                         </a>
                     </div>
                     <div class="panel">
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.landing-page') }}" class="nav__link">
                             <i class='i-landing-page nav__icon'></i>
                             <span class="nav__name">Landing Page</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="{{ route('admin.home') }}" class="nav__link">
                             <i class='i-home nav__icon'></i>
                             <span class="nav__name">Home</span>
                         </a>
                     </div>
 
-                    <a href="#" class="nav__link">
+                    <a href="{{ route('admin.chat') }}" class="nav__link">
                         <i class='i-chat nav__icon'></i>
                         <span class="nav__name">Chatting Service</span>
                     </a>
 
-                    <a href="#" class="nav__link">
+                    <a href="{{ route('admin.help') }}" class="nav__link">
                         <i class='i-help nav__icon'></i>
                         <span class="nav__name">Help</span>
                     </a>

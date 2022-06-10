@@ -56,6 +56,9 @@ for (i = 0; i < acc.length; i++) {
         $(".rotate").toggleClass("down"); 
     })
         
-    
+    function menuToggle() {
+      const toggleMenu = document.querySelector(".menu");
+      toggleMenu.classList.toggle("active");
+    }
         
 
