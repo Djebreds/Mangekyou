@@ -2,35 +2,50 @@
 @section('title', 'User')
 @section('content')
     <section>
+        <header>
+            <h1>Users</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Customers</li>
+                    <li class="breadcrumb-item active" aria-current="page">Users</li>
+                </ol>
+            </nav>
+        </header>
+
         <div class="card">
-            <h1>User</h1>
-            <table class="table table-striped">
+            <table class="table table-striped" id="myTable">
                 <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
                 </thead>
                 <tbody>
+                @for($a = 0; $a < 50; $a++)
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Dadang Jebred</td>
+                        <td>dadang@jebred.com</td>
+                        <td>08{{ rand(8000000, 99999999) }}</td>
+                        <td>active | suspended | inactive</td>
+                        <td>
+                            <div class="action">
+                                <a href="">
+                                    view |
+                                </a>
+                                <a href="">
+                                    edit |
+                                </a>
+                                <a href="">
+                                    delete
+                                </a>
+                            </div>
+                        </td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+                @endfor
                 </tbody>
             </table>
         </div>
