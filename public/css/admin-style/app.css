@@ -1,32 +1,33 @@
-
-
 /*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 /*===== VARIABLES CSS =====*/
-:root{
+
+:root {
     --header-height: 3rem;
     --nav-width: 68px;
-
     /*===== Colors =====*/
     --first-color: white;
     --first-color-light: white;
     --white-color: #0D5C63;
-
     /*===== Font and typography =====*/
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
-
     /*===== z index =====*/
     --z-fixed: 100;
 }
 
+
 /*===== BASE =====*/
-*,::before,::after{
+
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     position: relative;
     margin: var(--header-height) 0 0 0;
     padding: 1rem;
@@ -36,12 +37,13 @@ body{
     background-color: #DDEBEB;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
 /*===== HEADER =====*/
+
 .header {
     width: 100%;
     height: var(--header-height);
@@ -57,14 +59,15 @@ a{
     transition: .5s;
 }
 
-.header__toggle, i {
+.header__toggle,
+i {
     color: var(--first-color);
     font-size: 1.5rem;
     cursor: pointer;
     vertical-align: middle;
 }
 
-.header__img{
+.header__img {
     width: 35px;
     height: 35px;
     display: flex;
@@ -73,11 +76,13 @@ a{
     overflow: hidden;
 }
 
-.header__img img{
+.header__img img {
     width: 40px;
 }
 
+
 /*===== NAV =====*/
+
 .l-navbar {
     position: fixed;
     top: 0;
@@ -87,16 +92,14 @@ a{
     background-color: white;
     transition: .5s;
     z-index: var(--z-fixed);
-
 }
 
-.nav{
+.nav {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
-    
 }
 
 .nav::-webkit-scrollbar {
@@ -108,8 +111,8 @@ a{
     scrollbar-width: none;
 }
 
-
-.nav__logo, .nav__link{
+.nav__logo,
+.nav__link {
     display: grid;
     grid-template-columns: max-content max-content;
     align-items: center;
@@ -117,8 +120,7 @@ a{
     padding: .5rem 0 .5rem 1.5rem;
 }
 
-
-.nav__logo-name{
+.nav__logo-name {
     vertical-align: middle;
 }
 
@@ -133,23 +135,27 @@ a{
     color: #0c5460;
 }
 
-
-.nav__icon{
+.nav__icon {
     font-size: 1.25rem;
 }
 
+
 /*Show navbar movil*/
+
 .showed {
     left: 0;
 }
 
+
 /*Add padding body movil*/
+
 .body-pd {
     padding-left: calc(var(--nav-width) + 1rem);
 }
 
 
 /**** line ******/
+
 .line {
     display: flex;
     align-items: center;
@@ -174,7 +180,6 @@ a{
     margin-left: .10em;
 }
 
-
 .accordion {
     cursor: pointer;
     width: 100%;
@@ -183,28 +188,31 @@ a{
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-  }
-  
-  .panel {
+}
+
+.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
-  .accordion-name {
-      color: #8DC7C6;
-      font-size: 15px;
-      font-weight: 600;
-  }
+.accordion-name {
+    color: #8DC7C6;
+    font-size: 15px;
+    font-weight: 600;
+}
 
-  /* i .i-arrow::before {
+
+/* i .i-arrow::before {
     transition: transfrom .2s ease;
     transform: rotate(0);
 }
 i .rotate.i-arrow::before {
     transform: rotate(180deg);
 } */
-/* 
+
+
+/*
 .accordion .nav__link i.i-arrow::before {
     transition: transfrom .2s ease;
     transform: rotate(0);
@@ -215,13 +223,13 @@ i .rotate.i-arrow::before {
 }
 
  */
- 
- .rotate{
-     transform: rotate(-90deg);
+
+.rotate {
+    transform: rotate(-90deg);
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
- }
+}
 
 .rotate.down {
     -ms-transform: rotate(0deg);
@@ -230,7 +238,9 @@ i .rotate.i-arrow::before {
     transform: rotate(0deg);
 }
 
+
 /* User Profile */
+
 .header__name h5 {
     font-size: 17px;
     color: #0D5C63;
@@ -244,40 +254,40 @@ i .rotate.i-arrow::before {
 }
 
 
+/* tables */
+
+thead {
+    color: #0D5C63;
+}
+
+
 /* ===== MEDIA QUERIES=====*/
+
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-left: calc(var(--nav-width) + 2rem);
     }
-
     .header {
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
     }
-
-    .header__img{
+    .header__img {
         width: 40px;
         height: 40px;
     }
-
-    .header__img img{
+    .header__img img {
         width: 45px;
     }
-
-    .l-navbar{
+    .l-navbar {
         left: 0;
     }
-
     /*Show navbar desktop*/
     .showed {
         width: calc(var(--nav-width) + 156px);
     }
-
     /*Add padding body desktop*/
-    .body-pd{
+    .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
-
-
