@@ -100,12 +100,21 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
+<<<<<<< HEAD
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable();
         });
     </script>
+=======
+<script src="{{ asset('js/admin-script/app.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable({});
+    });
+</script>
+>>>>>>> 4f3919f (bug fixing)
 
     <script
         src="https://cdn.jsdelivr.net/combine/npm/echarts@5.3.2/renderers.min.js,npm/echarts@5.3.2/features.min.js,npm/echarts@5.3.2/core.min.js">
