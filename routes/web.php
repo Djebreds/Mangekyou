@@ -21,63 +21,75 @@ Route::get('/', function () {
 });
 
 Route::get('admin/dashboard', function () {
-    return view('admin.page-dashboard.dashboard');
+    return view('admin.dashboard.dashboard');
 })->name('admin.dashboard');
 
 Route::get('admin/email', function () {
-    return view('admin.page-dashboard.mail');
+    return view('admin.mail.index');
 })->name('admin.email');
 
 Route::get('admin/user', function () {
-    return view('admin.page-dashboard.user');
+    return view('admin.user.index');
 })->name('admin.user');
 
 Route::get('admin/e-commerse', function () {
-    return view('admin.page-dashboard.e-commerse');
+    return view('admin.e-commerse.index');
 })->name('admin.e-commerse');
 
 Route::get('admin/official', function () {
-    return view('admin.page-dashboard.official');
+    return view('admin.official.index');
 })->name('admin.official');
 
 Route::get('admin/category', function () {
-    return view('admin.page-dashboard.category');
+    return view('admin.category.index');
 })->name('admin.category');
 
 Route::get('admin/product', function () {
-    return view('admin.page-dashboard.product');
+    return view('admin.product.index');
 })->name('admin.product');
 
 Route::get('admin/promo', function () {
-    return view('admin.page-dashboard.promo');
+    return view('admin.promo.index');
 })->name('admin.promo');
 
 Route::get('admin/order', function () {
-    return view('admin.page-dashboard.order');
+    return view('admin.order.index');
 })->name('admin.order');
 
 Route::get('admin/payment', function () {
-    return view('admin.page-dashboard.payment');
+    return view('admin.payment.index');
 })->name('admin.payment');
 
 Route::get('admin/invoice', function () {
-    return view('admin.page-dashboard.invoice');
+    return view('admin.invoice.index');
 })->name('admin.invoice');
 
 Route::get('admin/landing-page', function () {
-    return view('admin.page-dashboard.landing-page');
+    return view('admin.landing-page.landing-page');
 })->name('admin.landing-page');
 
 Route::get('admin/home', function () {
-    return view('admin.page-dashboard.home');
+    return view('admin.home.index');
 })->name('admin.home');
 
 Route::get('admin/chat', function () {
-    return view('admin.page-dashboard.chat');
+    return view('admin.chat.index');
 })->name('admin.chat');
 
 Route::get('admin/help', function () {
-    return view('admin.page-dashboard.help');
+    return view('admin.settings.help');
+})->name('admin.help');
+
+Route::get('admin/profile', function () {
+    return view('admin.settings.profile');
+})->name('admin.profile');
+
+Route::get('admin/setting', function () {
+    return view('admin.settings.account-setting');
+})->name('admin.setting');
+
+Route::get('admin/help', function () {
+    return view('admin.settings.help');
 })->name('admin.help');
 
 Route::get('/coba', function () {

@@ -9,9 +9,9 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     if(toggle && nav && bodypd && headerpd){
         toggle.addEventListener('click', ()=>{
             // show navbar
-            nav.classList.toggle('show')
+            nav.classList.toggle('showed')
             // change icon
-            toggle.classList.toggle('bx-x')
+            toggle.classList.toggle('i-sort')
             // add padding to body
             bodypd.classList.toggle('body-pd')
             // add padding to header
@@ -33,32 +33,52 @@ function colorLink(){
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+const acc = document.getElementsByClassName("accordion");
+let i;
+
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("actived");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+    if(i === 0) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("actived");
+            let icons1 = document.getElementById('arrows1');
+            icons1.classList.toggle('down');
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    } else if (i === 1) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("actived");
+            let icons2 = document.getElementById('arrows2');
+            icons2.classList.toggle('down');
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+
+                panel.style.maxHeight = null;
+            } else {
+
+                panel.style.maxHeight = panel.scrollHeight + "px";
+
+            }
+        });
+    }
+
 }
 
 
 // $( ".i-arrow" ).click(function() {
 //     $(this).toggleClass("rotate");
 //   });
-    $(".accordion").click(function() {
-        $(".rotate").toggleClass("down"); 
-    })
-        
-    function menuToggle() {
-      const toggleMenu = document.querySelector(".menu");
-      toggleMenu.classList.toggle("active");
-    }
+// //
+//     $(".accordion").click(function() {
+//         $(".rotate").toggleClass("down");
+//     })
+
+
         
 

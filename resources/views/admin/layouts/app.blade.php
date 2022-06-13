@@ -62,7 +62,7 @@
                             <li><a class="dropdown-item hstack gap-2" href="{{ route('admin.profile') }}"><i
                                         class='i-profile-user'></i>Profile</a>
                             </li>
-                            <li><a class="dropdown-item hstack gap-2" href="{{ route('admin.setting') }}"><i
+                            <li><a class="dropdown-item hstack gap-2" href="{{ route('admin.account-setting') }}"><i
                                         class='i-profile-setting'></i>Account Setting</a>
                             </li>
                             <li>

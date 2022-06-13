@@ -1,0 +1,241 @@
+/* Icon */
+
+.i-dashboard {
+    background: url("../../img/icon/icon-admin/dashboard.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.i-email {
+    background: url("../../img/icon/icon-admin/email.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-category {
+    background: url("../../img/icon/icon-admin/category.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-chat {
+    background: url("../../img/icon/icon-admin/chat.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-e-commerse {
+    background: url("../../img/icon/icon-admin/e-commerse.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-help {
+    background: url("../../img/icon/icon-admin/help.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-tohoku {
+    background: url("../../img/icon/tohoku-logo.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 120px;
+    height: 50px;
+}
+
+.i-home {
+    background: url("../../img/icon/icon-admin/home.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-invoice {
+    background: url("../../img/icon/icon-admin/invoice.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-landing-page {
+    background: url("../../img/icon/icon-admin/landing-page.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-list {
+    background: url("../../img/icon/icon-admin/list.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-m-user {
+    background: url("../../img/icon/icon-admin/m-user.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-official {
+    background: url("../../img/icon/icon-admin/official.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
+.i-order {
+    background: url("../../img/icon/icon-admin/order.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+}
+
+.i-payment {
+    background: url("../../img/icon/icon-admin/payment.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-product {
+    background: url("../../img/icon/icon-admin/product.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-logo {
+    background: url("../../img/icon/logo.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-promo {
+    background: url("../../img/icon/icon-admin/promo.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-info {
+    background: url("../../img/icon/icon-admin/profile-info.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-logout {
+    background: url("../../img/icon/icon-admin/profile-logout.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-setting {
+    background: url("../../img/icon/icon-admin/profile-setting.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-profile-user {
+    background: url("../../img/icon/icon-admin/profile-user.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-arrow {
+    background: url("../../img/icon/icon-admin/arrow.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-notification {
+    background: url("../../img/icon/icon-admin/notif-bel.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-chatting {
+    background: url("../../img/icon/icon-admin/chatting.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-edit {
+    background: url("../../img/icon/icon-admin/edit.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-delete {
+    background: url("../../img/icon/icon-admin/delete.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.i-detail {
+    background: url("../../img/icon/icon-admin/detail.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
+.i-menu {
+    background: url("../../img/icon/icon-admin/menu.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.i-sort {
+    background: url("../../img/icon/icon-admin/sort.svg") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
