@@ -14,40 +14,42 @@
         </header>
 
         <div class="card">
-            <table class="table table-striped" id="myTable">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @for ($a = 0; $a < 50; $a++)
+            <div class="card-body">
+                <table class="table table-striped table-bordered" id="myTable">
+                    <thead>
                         <tr>
-                            <td>Dadang Jebred</td>
-                            <td>dadang@jebred.com</td>
-                            <td>08{{ rand(8000000, 99999999) }}</td>
-                            <td>active | suspended | inactive</td>
-                            <td>
-                                <div class="action">
-                                    <a href="">
-                                        view |
-                                    </a>
-                                    <a href="">
-                                        edit |
-                                    </a>
-                                    <a href="">
-                                        delete
-                                    </a>
-                                </div>
-                            </td>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                            <th class="text-center">Action</th>
                         </tr>
-                    @endfor
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @for ($a = 0; $a < 50; $a++)
+                            <tr>
+                                <td>Dadang Jebred</td>
+                                <td>dadang@jebred.com</td>
+                                <td>08{{ rand(8000000, 99999999) }}</td>
+                                <td>active | suspended | inactive</td>
+                                <td class="text-center">
+                                    <div class="action">
+                                        <a href="">
+                                            <span class="i-detail"></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="i-edit"></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="i-delete"></span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 @endsection
