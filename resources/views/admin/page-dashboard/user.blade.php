@@ -14,8 +14,7 @@
         </header>
 
         <div class="card">
-<<<<<<< HEAD
-            <div class="card-body">
+            <<<<<<< HEAD <div class="card-body">
                 <table class="table table-striped table-bordered" id="myTable">
                     <thead>
                         <tr>
@@ -51,10 +50,10 @@
                     </tbody>
                 </table>
 
-            </div>
-=======
-            <table class="table table-striped" id="myTable">
-                <thead>
+        </div>
+        =======
+        <table class="table table-striped" id="myTable">
+            <thead>
                 <tr>
                     <th>Name</th>
                     <th>Role</th>
@@ -63,9 +62,9 @@
                     <th>Status</th>
                     <th>Action</th>
                 </tr>
-                </thead>
-                <tbody>
-                @for($a = 0; $a < 50; $a++)
+            </thead>
+            <tbody>
+                @for ($a = 0; $a < 50; $a++)
                     <tr>
                         <td>Dadang Jebred</td>
                         <td>Customer</td>
@@ -79,21 +78,21 @@
                         <td>
                             <div class="action">
                                 <a href="">
-                                    view |
+                                    <span class="i-detail"></span>
                                 </a>
                                 <a href="">
-                                    edit |
+                                    <span class="i-edit"></span>
                                 </a>
                                 <a href="">
-                                    delete
+                                    <span class="i-delete"></span>
                                 </a>
                             </div>
                         </td>
                     </tr>
                 @endfor
-                </tbody>
-            </table>
->>>>>>> 4f3919f (bug fixing)
+            </tbody>
+        </table>
+        >>>>>>> 4f3919f (bug fixing)
         </div>
     </section>
 @endsection

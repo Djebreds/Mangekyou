@@ -254,10 +254,74 @@ i .rotate.i-arrow::before {
 }
 
 
-/* tables */
+/* ===== Admin Tables Styling  */
 
 thead {
-    color: #0D5C63;
+    color: #247B7B;
+    font-weight: bolder;
+}
+
+tbody {
+    font-size: 13px;
+}
+
+
+/* User Status */
+
+.status-active {
+    background: #ccf6e4;
+    color: #00864e;
+}
+
+.status-inactive {
+    background: #fad7dd;
+    color: #932338;
+}
+
+.status-suspended {
+    background: rgba(137, 144, 151, 0.2);
+    color: #7d899b;
+}
+
+
+/* User Role */
+
+.role-customer {
+    background: rgb(237, 242, 249);
+    color: rgb(44, 123, 229);
+}
+
+.role-admin {
+    background: #fad7dd;
+    color: #932338;
+}
+
+.role-official {
+    background: #fde6d8;
+    color: #9d5228;
+}
+
+
+/* table */
+
+.table-admin-border {
+    border-color: #8DC7C6;
+}
+
+.table-admin-row:hover {
+    background-color: #dfeef0;
+}
+
+
+/* JS */
+
+.active>.page-link {
+    background-color: #44A1A0;
+    border-color: #247B7B;
+}
+
+a.page-link {
+    color: #44A1A0;
 }
 
 
