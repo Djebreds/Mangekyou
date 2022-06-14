@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use PhpParser\Node\Expr\FuncCall;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('admin/dashboard', function () {
-    return view('admin.dashboard.dashboard');
+    return view('admin.dashboard');
 })->name('admin.dashboard');
 
 Route::get('admin/email', function () {

@@ -82,7 +82,7 @@
     </header>
 
     {{-- side bar --}}
-    @include('admin.sidebar')
+    @include('layouts.admin.partials.sidebar')
 
     <main class="main">
         @yield('content')

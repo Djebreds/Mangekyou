@@ -1,4 +1,4 @@
-@extends('admin.app')
+@extends('layouts.admin.main')
 @section('title', 'Payment Method')
 @section('content')
     <section>

@@ -88,7 +88,7 @@
     </section>
 @endsection --}}
 
-@extends('layouts.app')
+@extends('layouts.auth.main')
 
 @section('content')
     <section>
