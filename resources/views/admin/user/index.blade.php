@@ -58,7 +58,6 @@
                         @endfor
                     </tbody>
                 </table>
-                <<<<<<< HEAD=======>>>>>>> ac8695e77f2b3b20a924655ee3d149c79ba72a09
             </div>
         </div>
     </section>
