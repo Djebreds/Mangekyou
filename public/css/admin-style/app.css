@@ -324,15 +324,18 @@ a.page-link {
     color: #44A1A0;
 }
 
+
 /* profile */
 
-.profile, h3 {
+.profile,
+h3 {
     font-size: 20px;
     font-weight: bold;
     color: #0D5C63;
 }
 
-.profile, h4 {
+.profile,
+h4 {
     font-size: 14px;
     font-weight: bold;
     color: #247B7B;
@@ -340,8 +343,26 @@ a.page-link {
 
 .img-profile img {
     border: red;
-    max-width: 50%;
+    max-width: 85px;
+    background-size: cover;
 }
+
+
+/* form */
+
+.btn-green {
+    background-color: #44A1A0;
+    color: white;
+    border-color: #44A1A0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green:hover {
+    background-color: #247B7B;
+    color: white;
+    border-color: #247B7B;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 
@@ -372,7 +393,6 @@ a.page-link {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
     }
-
     /*for tablet col*/
     .col-1 {
         width: 8.33%;
@@ -410,8 +430,7 @@ a.page-link {
     .col-12 {
         width: 100%;
     }
-
-/*for desktop*/
+    /*for desktop*/
     .col-s-1 {
         width: 8.33%;
     }
@@ -448,5 +467,4 @@ a.page-link {
     .col-s-12 {
         width: 100%;
     }
-
 }
