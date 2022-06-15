@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -44,4 +44,93 @@
         </div>
     </div>
 </div>
+@endsection --}}
+{{-- @extends('layouts.app')
+@section('content')
+    <section id="reset-password">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        <div class="row">
+                            <div class="col-6 col-s-1 text-center">
+                                <img class="image" src="{{ asset('img/Authentication.svg') }}" alt="">
+                            </div>
+                            <div class="col-6 col-s-1">
+                                <h3 class="text-center">Reset Password</h3>
+
+                                <form class="form-field" method="POST" action="{{ route('password.email') }}">
+                                    @csrf
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                                        name="email" value="{{ old('email') }}" required autocomplete="email"
+                                        placeholder="Email">
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            {{ $message }}
+                                        </span>
+                                    @enderror
+                                    <div class="d-grid my-4">
+                                        <button type="submit" class="btn btn-field">Reset Link</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection --}}
+
+@extends('layouts.auth.main')
+
+@section('content')
+    <section>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-5 col-s-6">
+                    <div class="background-image text-center">
+                        <figure>
+                            <img src="{{ asset('img/Authentication.svg') }}" alt="Authentication" style="max-width: 80%">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-5 col-s-6">
+                    <div class="card border-0">
+                        <div class="card-header-title mt-4">
+                            <header class="header text-center">
+                                <h3>Reset Password</h3>
+                            </header>
+                        </div>
+                        <div class="card-body">
+                            @if (session('status'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
+                            <form class="form-field" method="POST" action="{{ route('password.email') }}">
+                                @csrf
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                                    name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        {{ $message }}
+                                    </span>
+                                @enderror
+                                <div class="d-grid my-4">
+                                    <button type="submit" class="btn btn-field">Reset Link</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
