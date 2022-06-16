@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/admin-style/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin-style/icon.css') }}">
-
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"
+            integrity="sha256-oZEaXgWqxLmr12VzCK9eGOuHIi3XPZ/KsJXXFjtyvZA=" crossorigin="anonymous"></script>
     <title>@yield('title')</title>
 </head>
 
@@ -97,26 +98,54 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#myTable').DataTable({});
         });
     </script>
+    {{--    <script src="{!! mix('js/app.js') !!}"></script>--}}
+    {{--    <script src="{{ asset('js/admin-script/echart.js') }}"></script>--}}
 
-    <script
-        src="https://cdn.jsdelivr.net/combine/npm/echarts@5.3.2/renderers.min.js,npm/echarts@5.3.2/features.min.js,npm/echarts@5.3.2/core.min.js">
+    <script src="https://cdn.jsdelivr.net/combine/npm/echarts@5.3.2/renderers.min.js,npm/echarts@5.3.2/features.min.js,npm/echarts@5.3.2/core.min.js"></script>
+
+    <script>
+        var myChart = echarts.init(document.getElementById('order'), null);
+        var option = {
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+            },
+            label: {
+                show: true,
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    data: [20, 40, 120, 80, 100],
+                    type: 'line',
+                    smooth: true,
+                }
+            ]
+        };
+        window.addEventListener('resize', function () {
+            myChart.resize();
+        })
+        myChart.setOption(option);
     </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
     </script>
 </body>
 

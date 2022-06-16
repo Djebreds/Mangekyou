@@ -14,19 +14,21 @@
         </header>
         <div class="card">
             <div class="card-body">
-                <table class="table table-bordered table-admin-border" id="myTable">
+                <table class="table table-bordered table-admin-border compact dt[-head|-body]-justify"
+                       data-page-length="15"
+                       id="myTable">
                     <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        @for ($a = 0; $a < 50; $a++)
+                    @for ($a = 0; $a < 50; $a++)
                             <tr class="table-admin-row">
                                 <td>Dadang Jebred</td>
                                 <td>
