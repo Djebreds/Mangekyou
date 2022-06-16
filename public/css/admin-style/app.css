@@ -241,6 +241,12 @@ i .rotate.i-arrow::before {
 
 /* User Profile */
 
+/* dropdown */
+.group-button {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
 .header__name h5 {
     font-size: 17px;
     color: #0D5C63;
@@ -326,24 +332,10 @@ a.page-link {
 }
 
 
-/* profile */
 
-.profile,
-h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0D5C63;
-}
 
-.profile,
-h4 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #247B7B;
-}
-
-.img-profile img.img-thumbnail {
-    max-width: 100% !important;
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
 

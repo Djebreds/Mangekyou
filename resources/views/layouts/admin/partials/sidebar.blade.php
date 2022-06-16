@@ -38,36 +38,35 @@
                 <div class="line">
                     <span class="accordion-name">Shopping</span>
                 </div>
+                <a href="{{ route('admin.product') }}" class="nav__link">
+                    <i class='i-product nav__icon'></i>
+                    <span class="nav__name">Products</span>
+                </a>
 
-                    <a href="{{ route('admin.product') }}" class="nav__link">
-                        <i class='i-product nav__icon'></i>
-                        <span class="nav__name">Products</span>
-                    </a>
+                <a href="{{ route('admin.category') }}" class="nav__link">
+                    <i class='i-category nav__icon'></i>
+                    <span class="nav__name">Category</span>
+                </a>
 
-                    <a href="{{ route('admin.category') }}" class="nav__link">
-                        <i class='i-category nav__icon'></i>
-                        <span class="nav__name">Category</span>
-                    </a>
+                <a href="{{ route('admin.promo') }}" class="nav__link">
+                    <i class='i-promo nav__icon'></i>
+                    <span class="nav__name">Promo</span>
+                </a>
 
-                    <a href="{{ route('admin.promo') }}" class="nav__link">
-                        <i class='i-promo nav__icon'></i>
-                        <span class="nav__name">Promo</span>
-                    </a>
+                <a href="{{ route('admin.order') }}" class="nav__link">
+                    <i class='i-order nav__icon'></i>
+                    <span class="nav__name">Order</span>
+                </a>
 
-                    <a href="{{ route('admin.order') }}" class="nav__link">
-                        <i class='i-order nav__icon'></i>
-                        <span class="nav__name">Order</span>
-                    </a>
+                <a href="{{ route('admin.payment') }}" class="nav__link">
+                    <i class='i-payment nav__icon'></i>
+                    <span class="nav__name">Payment Method</span>
+                </a>
 
-                    <a href="{{ route('admin.payment') }}" class="nav__link">
-                        <i class='i-payment nav__icon'></i>
-                        <span class="nav__name">Payment Method</span>
-                    </a>
-
-                    <a href="{{ route('admin.invoice') }}" class="nav__link">
-                        <i class='i-invoice nav__icon'></i>
-                        <span class="nav__name">Invoice</span>
-                    </a>
+                <a href="{{ route('admin.invoice') }}" class="nav__link">
+                    <i class='i-invoice nav__icon'></i>
+                    <span class="nav__name">Invoice</span>
+                </a>
 
                 <div class="accordion">
                     <a href="#" class="hstack gap-4 m-4 dropdown">
