@@ -75,7 +75,7 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row justify-content-center g-4">
-					<div class="col-md-6 col-sm-4 border p-3 mx-2 justify-content-center rounded">
+					<div class="col-md-5 col-sm-4 border p-3 mx-2 justify-content-center rounded">
 						<img src="https://mdbootstrap.com/img/new/textures/small/52.jpg" style="width: 100px" class="float-start rounded me-3">
 						<div class="">
 							<h5>Nama toko</h5>
@@ -84,7 +84,7 @@
 							<div>kategori</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-4 border p-3 mx-2 justify-content-center rounded">
+					<div class="col-md-5 col-sm-4 border p-3 mx-2 justify-content-center rounded">
 						<img src="https://mdbootstrap.com/img/new/textures/small/52.jpg" style="width: 100px" class="float-start rounded me-3">
 						<div class="">
 							<h5>Nama toko</h5>
@@ -93,7 +93,7 @@
 							<div>kategori</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-4 border p-3 mx-2 justify-content-center rounded">
+					<div class="col-md-5 col-sm-4 border p-3 mx-2 justify-content-center rounded">
 						<img src="https://mdbootstrap.com/img/new/textures/small/52.jpg" style="width: 100px" class="float-start rounded me-3">
 						<div class="">
 							<h5>Nama toko</h5>
@@ -102,7 +102,7 @@
 							<div>kategori</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-4 border p-3 mx-2 justify-content-center rounded">
+					<div class="col-md-5 col-sm-4 border p-3 mx-2 justify-content-center rounded">
 						<img src="https://mdbootstrap.com/img/new/textures/small/52.jpg" style="width: 100px" class="float-start rounded me-3">
 						<div class="">
 							<h5>Nama toko</h5>
