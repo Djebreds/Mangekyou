@@ -2,7 +2,7 @@
 @section('title', 'Dashboard')
 @section('content')
     <section>
-        <header class="m-2">
+        <header class="">
             <h2>👋 Welcome, Dadang!</h2>
             <div class="row justify-content-between">
                 <div class="col-6 col-s-6">
