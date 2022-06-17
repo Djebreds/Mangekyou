@@ -6,7 +6,7 @@
 
 :root {
     --header-height: 3rem;
-    --nav-width: 68px;
+    --nav-width: 65px;
     /*===== Colors =====*/
     --first-color: white;
     --first-color-light: white;
@@ -241,6 +241,12 @@ i .rotate.i-arrow::before {
 
 /* User Profile */
 
+/* dropdown */
+.group-button {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
 .header__name h5 {
     font-size: 17px;
     color: #0D5C63;
@@ -259,10 +265,11 @@ i .rotate.i-arrow::before {
 thead {
     color: #247B7B;
     font-weight: bolder;
+    font-size: 14px;
 }
 
 tbody {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -324,31 +331,39 @@ a.page-link {
     color: #44A1A0;
 }
 
-/* profile */
 
-.profile, h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0D5C63;
+
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
-.profile, h4 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #247B7B;
+
+/* form */
+
+.btn-green {
+    background-color: #44A1A0;
+    color: white;
+    border-color: #44A1A0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.img-profile img {
-    border: red;
-    max-width: 50%;
+.btn-green:hover {
+    background-color: #247B7B;
+    color: white;
+    border-color: #247B7B;
 }
+
 
 /* ===== MEDIA QUERIES=====*/
+[class*="col-"] {
+    width: 100%;
+}
 
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
-        padding-left: calc(var(--nav-width) + 2rem);
+        padding-left: calc(var(--nav-width) + 1.2rem);
     }
     .header {
         height: calc(var(--header-height) + 1rem);
@@ -364,89 +379,114 @@ a.page-link {
     .l-navbar {
         left: 0;
     }
+
     /*Show navbar desktop*/
     .showed {
-        width: calc(var(--nav-width) + 156px);
+        width: calc(var(--nav-width) + 170px);
     }
+
     /*Add padding body desktop*/
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
     }
 
-    /*for tablet col*/
-    .col-1 {
-        width: 8.33%;
-    }
-    .col-2 {
-        width: 16.66%;
-    }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33%;
-    }
-    .col-5 {
-        width: 41.66%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33%;
-    }
-    .col-8 {
-        width: 66.66%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33%;
-    }
-    .col-11 {
-        width: 91.66%;
-    }
-    .col-12 {
-        width: 100%;
-    }
-
-/*for desktop*/
+    /*for tablet*/
     .col-s-1 {
         width: 8.33%;
     }
+
     .col-s-2 {
         width: 16.66%;
     }
+
     .col-s-3 {
         width: 25%;
     }
+
     .col-s-4 {
         width: 33.33%;
     }
+
     .col-s-5 {
         width: 41.66%;
     }
+
     .col-s-6 {
         width: 50%;
     }
+
     .col-s-7 {
         width: 58.33%;
     }
+
     .col-s-8 {
         width: 66.66%;
     }
+
     .col-s-9 {
         width: 75%;
     }
+
     .col-s-10 {
         width: 83.33%;
     }
+
     .col-s-11 {
         width: 91.66%;
     }
+
     .col-s-12 {
         width: 100%;
     }
+}
 
+
+@media only screen and (min-width: 1282px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }
