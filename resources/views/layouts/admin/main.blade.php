@@ -138,35 +138,7 @@
     <!--------------- custome javascript --------------->
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
 
-    <script>
-        $('#bornDate').flatpickr({
-            altInput: true,
-            altFormat: "F j, Y",
-            dateFormat: "Y-m-d",
-        });
-
-        // $("[type='number']").keypress(function(evt) {
-        //     evt.preventDefault();
-        // })
-        // Prevent NULL input and replace text.
-        $(document).on('change', 'input[type="number"]', function(event) {
-            this.value = this.value.replace(/[^0-9]+/g, '');
-            if (this.value < 1) this.value = 0;
-        });
-
-        // Block non-numeric chars.
-        $(document).on('keypress', 'input[type="number"]', function(event) {
-            return (((event.which > 47) && (event.which < 58)) || (event.which == 13));
-        });
-
-        $('#deactive').click(function() {
-            if ($('#deactive:checked').length == 1) {
-                $('#deactivated').removeAttr('disabled');
-            } else {
-                $('#deactivated').attr('disabled', 'disabled');
-            }
-        })
-    </script>
+    <script></script>
     <script src="{{ asset('js/admin-script/chart/dashboard.js') }}"></script>
 
     {{-- <script src="{!! mix('js/app.js') !!}"></script> --}}

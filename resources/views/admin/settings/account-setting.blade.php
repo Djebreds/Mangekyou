@@ -167,9 +167,8 @@
                                             </div>
                                             <div class="col-7 col-s-7">
                                                 <div class="form-outline mb-4">
-                                                    <input type="tel" pattern="[0-9]" minlength="12" maxlength="13"
-                                                        name="phone" id="phone" class="form-control"
-                                                        value="082121491054" />
+                                                    <input type="tel" minlength="10" maxlength="13" name="phone"
+                                                        id="phone" class="form-control" value="082121491054" />
                                                     <label class="form-label" for="phone">phone</label>
                                                 </div>
                                             </div>
@@ -234,10 +233,14 @@
                                             <label class="m-1 fw-bold" for="password">Current Password</label>
                                         </div>
                                         <div class="col-7 col-s-7">
-                                            <div class="form-outline mb-4">
-                                                <input type="password" name="password" id="password"
-                                                    class="form-control" autocomplete="current-password" />
-                                                <label class="form-label" for="password">Enter current password</label>
+                                            <div class="inner-addon">
+                                                <div class="form-outline mb-4">
+                                                    <input type="password" name="password" id="current-password"
+                                                        class="form-control with-icon" autocomplete="current-password" />
+                                                    <label class="form-label" for="current-password">Enter current
+                                                        password</label>
+                                                    <i class="far fa-eye" id="tooglePassword"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -246,14 +249,22 @@
                                             <label class="m-1 fw-bold" for="new-passwoprd">New Password</label>
                                         </div>
                                         <div class="col-7 col-s-7">
-                                            <div class="form-outline mb-4">
-                                                <input type="password" name="new-password" id="new-password"
-                                                    class="form-control" autocomplete="new-password" />
-                                                <label class="form-label" for="new-password">password
-                                                    confirmation</label>
+                                            <div class="inner-addon">
+                                                <div class="form-outline mb-4">
+                                                    <input type="password" name="new-password" id="new-password"
+                                                        class="form-control with-icon" autocomplete="new-password" />
+                                                    <label class="form-label" for="new-password">Password
+                                                        confirmation</label>
+                                                    <i class="far fa-eye" id="tooglePassword-new"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    {{-- <div class="inner-addon">
+                                        <input type="password" class="form-control with-icon" name="password"
+                                            id="current-password" autocomplete="new-password">
+                                        <i class="far fa-eye" id="tooglePassword"></i>
+                                    </div> --}}
                                     <div class="row g-0">
                                         <div class="col-5 col-s-5">
                                             <label class="m-1 fw-bold" for="new-passwoprd">Confirm New Password</label>
@@ -341,18 +352,25 @@
                                         <label class="fw-bold" for="verify-password">Password</label>
                                     </div>
                                     <div class="col-12 col-s-12">
-                                        <div class="form-outline">
-                                            <input type="password" name="password" id="verify-password"
-                                                class="form-control" autocomplete="current-password" />
-                                            <label class="form-label" for="password">Enter password</label>
+                                        <div class="inner-addon">
+                                            <div class="form-outline mb-3">
+                                                <input type="password" name="verify-password" id="verify-password"
+                                                    class="form-control with-icon" autocomplete="current-password" />
+                                                <label class="form-label" for="password">Enter password</label>
+                                                <i class="far fa-eye" id="tooglePasswordVerification"></i>
+                                                <div class="form-helper">Use your current password</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary rounded-5"
-                                    data-mdb-dismiss="modal">cancel</button>
-                                <button type="button" class="btn btn-danger rounded-5">Deactive Account !</button>
+                                <button type="button" class="btn btn-secondary rounded-5 fw-bold"
+                                    data-mdb-dismiss="modal"><i class="fas fa-times me-2 mb-1"
+                                        style="font-size: 14px"></i>cancel</button>
+                                <button type="button" class="btn btn-danger rounded-5 fw-bold"><i
+                                        class="fas fa-exclamation-triangle me-2 mb-1" style="font-size: 14px"></i>
+                                    Deactive Account</button>
                             </div>
                         </div>
                     </div>

@@ -27,7 +27,8 @@
                             <form class="form-group form-field" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="my-1 row">
-                                    <label for="email" class="col-sm-2 col-form-label">{{ __('Email Address') }}</label>
+                                    <label for="email"
+                                        class="col-sm-2 col-form-label">{{ __('Email Address') }}</label>
                                     <div class="col-sm-10">
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
@@ -43,7 +44,7 @@
                                 <div class="my-1 row">
                                     <label for="password" class="col-sm-2 col-form-label">{{ __('Password') }}</label>
                                     <div class="col-sm-10">
-                                        <div class="inner-addon ">
+                                        <div class="inner-addon">
                                             <input type="password"
                                                 class="form-control @error('password') is-invalid @enderror" name="password"
                                                 id="password" autocomplete="new-password">

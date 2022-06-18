@@ -210,6 +210,24 @@ i {
 .modal {
     top: 25% !important;
 }
+
+.with-icon {
+    padding-right: 45px !important;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon i {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 10px;
+    font-size: 15px;
+    z-index: 2;
+    color: #BDBDBD;
+}
 /* i .i-arrow::before {
     transition: transfrom .2s ease;
     transform: rotate(0);
