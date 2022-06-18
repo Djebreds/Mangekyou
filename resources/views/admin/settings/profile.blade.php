@@ -2,6 +2,7 @@
 @section('title', 'Profile')
 @section('content')
     <section>
+        <!-- Header -->
         <header class="m-2">
             <h2>✨ Here your profile</h2>
             <p class="note note-primary shadow-2">
@@ -22,11 +23,13 @@
                 </div>
             </nav>
         </header>
+        <!-- End Header -->
 
+        <!-- Profile  -->
         <div class="row">
             <div class="col-12 col-s-12">
                 <div class="card m-2">
-                    <div class="card-body p-0" style="height: 350px">
+                    <div class="card-body p-0" style="height: 380px">
                         <div class="background-image p-5 text-center shadow-1-strong rounded-5 mb-5 text-white"
                             style="height: 20vh;background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');">
                             <div class="profile">
@@ -66,7 +69,11 @@
                 </div>
             </div>
         </div>
+        <!-- End Profile  -->
+
+        <!-- Profile info  -->
         <div class="row g-0">
+            <!-- Detail Profile  -->
             <div class="col-6 col-s-6">
                 <div class="card m-2">
                     <div class="card-header hstack">Detail Profile <span
@@ -77,38 +84,37 @@
                         </span>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Store Information</a></li>
+                            <li><a class="dropdown-item" href="#">Profile Account</a></li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-light list-group-small">
-
                             <li class="list-group-item px-4">
                                 <div class="row">
-                                    <h5 class="fw-bold">General info</h5>
-                                    <div class="col-2 col-s-5">
+                                    <h5 class="fw-bold text-secondary">General info</h5>
+                                    <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Full Name</p>
                                     </div>
-                                    <div class="col-10 col-s-7">
+                                    <div class="col-9 col-s-7">
                                         <p class="m-1">Dadang Jebred Mustafa</p>
                                     </div>
-                                    <div class="col-2 col-s-5">
+                                    <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Born Date</p>
                                     </div>
-                                    <div class="col-10 col-s-7">
+                                    <div class="col-9 col-s-7">
                                         <p class="m-1">20 April 2005</p>
                                     </div>
-                                    <div class="col-2 col-s-5">
+                                    <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Gender</p>
                                     </div>
-                                    <div class="col-10 col-s-7">
+                                    <div class="col-9 col-s-7">
                                         <p class="m-1">Man</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item py-3 px-4">
                                 <div class="row">
-                                    <h5 class="fw-bold">Contact info</h5>
+                                    <h5 class="fw-bold text-secondary">Contact info</h5>
                                     <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Email</p>
                                     </div>
@@ -135,6 +141,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End Detail Profile  -->
+
+            <!-- Store Information  -->
             <div class="col-6 col-s-6">
                 <div class="card m-2">
                     <div class="card-header hstack">Store Information <span
@@ -144,8 +153,8 @@
                             more_horiz
                         </span>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Store Information</a></li>
+                            <li><a class="dropdown-item" href="#">Edit Store</a></li>
+                            <li><a class="dropdown-item" href="#">Detail Store</a></li>
                         </ul>
                     </div>
                     <div class="card-body">
@@ -153,44 +162,44 @@
 
                             <li class="list-group-item px-4">
                                 <div class="row">
-                                    <h5 class="fw-bold">General info</h5>
-                                    <div class="col-2 col-s-5">
-                                        <p class="m-1 fw-bold">Full Name</p>
+                                    <h5 class="fw-bold text-secondary">Store info</h5>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Store Name</p>
                                     </div>
-                                    <div class="col-10 col-s-7">
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">Djebredstore</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Owner</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
                                         <p class="m-1">Dadang Jebred Mustafa</p>
                                     </div>
-                                    <div class="col-2 col-s-5">
-                                        <p class="m-1 fw-bold">Born Date</p>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Created At</p>
                                     </div>
-                                    <div class="col-10 col-s-7">
-                                        <p class="m-1">20 April 2005</p>
-                                    </div>
-                                    <div class="col-2 col-s-5">
-                                        <p class="m-1 fw-bold">Gender</p>
-                                    </div>
-                                    <div class="col-10 col-s-7">
-                                        <p class="m-1">Man</p>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">14 January 2020</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item py-3 px-4">
                                 <div class="row">
-                                    <h5 class="fw-bold">Contact info</h5>
+                                    <h5 class="fw-bold text-secondary">Contact info</h5>
                                     <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Email</p>
                                     </div>
                                     <div class="col-9 col-s-7">
-                                        <p class="m-1">dadangjebred@tohoku.com</p>
+                                        <p class="m-1">djebredstore@tohoku.com</p>
                                     </div>
                                     <div class="col-3 col-s-5">
                                         <p class="m-1 fw-bold">Phone Number</p>
                                     </div>
                                     <div class="col-9 col-s-7">
-                                        <p class="m-1">+62 82121491054</p>
+                                        <p class="m-1">+62 7383762622</p>
                                     </div>
                                     <div class="col-3 col-s-5">
-                                        <p class="m-1 fw-bold">Full Address</p>
+                                        <p class="m-1 fw-bold">Address</p>
                                     </div>
                                     <div class="col-6 col-s-7">
                                         <p class="m-1">Jl. Soreang Cipatik Gang Mapawi RT-01 RW-06, Kab.Bandung,
@@ -203,6 +212,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End Store Information  -->
         </div>
+        <!-- End Profile info  -->
     </section>
 @endsection

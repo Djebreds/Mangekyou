@@ -19,6 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <!----------------- Custom Styling ---------------->
     <link rel="stylesheet" href="{{ asset('css/admin-style/app.css') }}">
@@ -28,12 +29,13 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"
         integrity="sha256-oZEaXgWqxLmr12VzCK9eGOuHIi3XPZ/KsJXXFjtyvZA=" crossorigin="anonymous"></script>
 
+
     <title>@yield('title')</title>
 </head>
 
-<body id="body-pd" class="body-pd">
+<body id="body-pd">
     <!-- header nav -->
-    <header class="header shadow body-pd" id="header">
+    <header class="header shadow " id="header">
         <div class="header__toggle">
             <i class='i-menu' id="header-toggle"></i>
         </div>
@@ -95,14 +97,17 @@
             </div>
         </div>
     </header>
+    <!-- end header nav  -->
 
     <!-- sidebar -->
     @include('layouts.admin.partials.sidebar')
+    <!-- end sidebar -->
 
     <!-- content main -->
     <main class="main">
         @yield('content')
     </main>
+    <!-- end content -->
 
     <!-- footer -->
     <footer class="text-center">
@@ -110,11 +115,15 @@
             Copyright © Tohoku 2022
         </div>
     </footer>
+    <!-- end footer -->
 
     <!--------------- external javascript --------------->
     <!-- Jquery Library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <!-- Jquery for dataTables -->
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     {{-- <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> --}}
@@ -129,11 +138,35 @@
     <!--------------- custome javascript --------------->
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
 
-    {{-- <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable({});
+    <script>
+        $('#bornDate').flatpickr({
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
         });
-    </script> --}}
+
+        // $("[type='number']").keypress(function(evt) {
+        //     evt.preventDefault();
+        // })
+        // Prevent NULL input and replace text.
+        $(document).on('change', 'input[type="number"]', function(event) {
+            this.value = this.value.replace(/[^0-9]+/g, '');
+            if (this.value < 1) this.value = 0;
+        });
+
+        // Block non-numeric chars.
+        $(document).on('keypress', 'input[type="number"]', function(event) {
+            return (((event.which > 47) && (event.which < 58)) || (event.which == 13));
+        });
+
+        $('#deactive').click(function() {
+            if ($('#deactive:checked').length == 1) {
+                $('#deactivated').removeAttr('disabled');
+            } else {
+                $('#deactivated').attr('disabled', 'disabled');
+            }
+        })
+    </script>
     <script src="{{ asset('js/admin-script/chart/dashboard.js') }}"></script>
 
     {{-- <script src="{!! mix('js/app.js') !!}"></script> --}}

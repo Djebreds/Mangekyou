@@ -1,4 +1,4 @@
-<aside class="l-navbar showed" id="nav-bar">
+<aside class="l-navbar " id="nav-bar">
     <nav class="nav">
         <div>
             <div class="logo">

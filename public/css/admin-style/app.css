@@ -202,7 +202,14 @@ i {
     font-weight: 600;
 }
 
+.text-secondary {
+    color: #520CC2 !important;
+}
 
+
+.modal {
+    top: 25% !important;
+}
 /* i .i-arrow::before {
     transition: transfrom .2s ease;
     transform: rotate(0);
@@ -259,6 +266,15 @@ i .rotate.i-arrow::before {
     font-weight: 400;
 }
 
+.list-group-light .active {
+    background-color: transparent;
+    color: #616161;
+}
+
+.form-outline .form-control[readonly] {
+    background-color: transparent;
+}
+
 
 /* ===== Admin Tables Styling  */
 
@@ -273,85 +289,9 @@ tbody {
 }
 
 
-/* User Status */
-
-.status-active {
-    background: #ccf6e4;
-    color: #00864e;
-}
-
-.status-inactive {
-    background: #fad7dd;
-    color: #932338;
-}
-
-.status-suspended {
-    background: rgba(137, 144, 151, 0.2);
-    color: #7d899b;
-}
-
-
-/* User Role */
-
-.role-customer {
-    background: rgb(237, 242, 249);
-    color: rgb(44, 123, 229);
-}
-
-.role-admin {
-    background: #fad7dd;
-    color: #932338;
-}
-
-.role-official {
-    background: #fde6d8;
-    color: #9d5228;
-}
-
-
-/* table */
-
-.table-admin-border {
-    border-color: #8DC7C6;
-}
-
-.table-admin-row:hover {
-    background-color: #dfeef0;
-}
-
-
-/* JS */
-
-.active>.page-link {
-    background-color: #44A1A0;
-    border-color: #247B7B;
-}
-
-a.page-link {
-    color: #44A1A0;
-}
-
-
-
 
 .card-header {
     border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
-}
-
-
-/* form */
-
-.btn-green {
-    background-color: #44A1A0;
-    color: white;
-    border-color: #44A1A0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.btn-green:hover {
-    background-color: #247B7B;
-    color: white;
-    border-color: #247B7B;
 }
 
 
@@ -383,6 +323,7 @@ a.page-link {
     /*Show navbar desktop*/
     .showed {
         width: calc(var(--nav-width) + 170px);
+        z-index: 999;
     }
 
     /*Add padding body desktop*/
