@@ -360,15 +360,56 @@ i .rotate.i-arrow::before {
 
 
 /* ===== Admin Tables Styling  */
-
-thead {
-    color: #247B7B;
-    font-weight: bolder;
-    font-size: 14px;
+.sort:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent; */
+    /* content: "\2191"; */
+    position: relative;
+    top: -10px;
+    right: -5px;
 }
 
-tbody {
-    font-size: 14px;
+.sort.asc:after {
+    width: 0;
+    height: 0;
+    /* border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #520CC2; */
+    content: "\2191";
+    position: relative;
+    top: 4px;
+    right: -5px;
+}
+
+.sort.desc:after {
+    width: 0;
+    height: 0;
+    /* border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #520CC2; */
+    content: "\2193";
+    position: relative;
+    top: -4px;
+    right: -5px;
+}
+
+.page {
+    background-color: #B33CFD;
+    color: white;
+    padding: 0.375rem 1rem 0.3125rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+    font-weight: 500;
+    margin: 3px;
+    border-radius: 0.2rem;
 }
 
 

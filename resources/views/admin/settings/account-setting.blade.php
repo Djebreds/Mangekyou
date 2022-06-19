@@ -93,9 +93,9 @@
                 <div class="card m-2">
                     <form action="" method="">
                         <div class="card-header hstack">Detail Profile <span
-                                class="ms-auto material-symbols-rounded btn btn-link px-1 py-1 fs-3" href="#"
-                                role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false"
-                                style="line-height: 0.5;">
+                                class="ms-auto material-symbols-rounded btn btn-link px-1 py-1 fs-3 text-secondary"
+                                href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown"
+                                aria-expanded="false" style="line-height: 0.5;">
                                 more_horiz
                             </span>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -225,9 +225,9 @@
                 <div class="card m-2">
                     <form action="" method="">
                         <div class="card-header hstack">Password Settings <span
-                                class="ms-auto material-symbols-rounded btn btn-link px-1 py-1 fs-3" href="#"
-                                role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false"
-                                style="line-height: 0.5;">
+                                class="ms-auto material-symbols-rounded btn btn-link px-1 py-1 fs-3 text-secondary"
+                                href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown"
+                                aria-expanded="false" style="line-height: 0.5;">
                                 more_horiz
                             </span>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

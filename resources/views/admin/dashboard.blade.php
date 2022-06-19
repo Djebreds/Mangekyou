@@ -2,7 +2,7 @@
 @section('title', 'Dashboard')
 @section('content')
     <section>
-        <header class="">
+        <header class="m-2">
             <h2>👋 Welcome, Dadang!</h2>
             <div class="row justify-content-between">
                 <div class="col-6 col-s-6">
@@ -12,7 +12,7 @@
                     <p class="text-end">Saturday, 30 July 2022</p>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-6 my-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-6">
                 <div class="container-fluid">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">

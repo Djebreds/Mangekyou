@@ -35,8 +35,16 @@
                             <div class="profile">
                                 <div class="row text-center text-lg-start text-md-start">
                                     <div class="col-12 col-s-12">
-                                        <img src="https://picsum.photos/150" alt="picture"
-                                            class="rounded-circle border border-5 shadow-2 my-3 ">
+                                        <div
+                                            class="profile justify-content-center justify-content-md-start justify-content-lg-start ">
+                                            <div
+                                                class="avatar-upload justify-content-center justify-content-md-start justify-content-lg-start my-3 ms-auto ms-md-0 ms-lg-0 ">
+                                                <div class="avatar-preview ">
+                                                    <img src="https://picsum.photos/150" class="rounded-circle shadow-2"
+                                                        alt="picture" width="150" height="150" id="imagePreview">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-s-12">
                                         <div class="title text-center text-md-start text-lg-start">
@@ -128,7 +136,25 @@
                                         <p class="m-1">+62 82121491054</p>
                                     </div>
                                     <div class="col-3 col-s-5">
-                                        <p class="m-1 fw-bold">Full Address</p>
+                                        <p class="m-1 fw-bold">Province/City</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">Jawa Barat, Kabupaten Bandung</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Distinct/Village</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">Soreang, Pamekaran</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Zip Code</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">40192</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Detail Address</p>
                                     </div>
                                     <div class="col-6 col-s-7">
                                         <p class="m-1">Jl. Soreang Cipatik Gang Mapawi RT-01 RW-06, Kab.Bandung,
@@ -199,7 +225,25 @@
                                         <p class="m-1">+62 7383762622</p>
                                     </div>
                                     <div class="col-3 col-s-5">
-                                        <p class="m-1 fw-bold">Address</p>
+                                        <p class="m-1 fw-bold">Province/City</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">Jawa Barat, Kabupaten Bandung, Soreang, Pamekaran</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Distinct/Village</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">Soreang, Pamekaran</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Zip Code</p>
+                                    </div>
+                                    <div class="col-9 col-s-7">
+                                        <p class="m-1">40192</p>
+                                    </div>
+                                    <div class="col-3 col-s-5">
+                                        <p class="m-1 fw-bold">Detail Address</p>
                                     </div>
                                     <div class="col-6 col-s-7">
                                         <p class="m-1">Jl. Soreang Cipatik Gang Mapawi RT-01 RW-06, Kab.Bandung,
