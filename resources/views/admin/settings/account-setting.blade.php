@@ -33,8 +33,22 @@
                                     <div class="row text-center text-lg-start text-md-start">
                                         <figure class="m-0">
                                             <div class="col-12 col-s-12">
-                                                <img src="https://picsum.photos/150" alt="picture"
-                                                    class="rounded-circle border border-5 shadow-2 my-3 ">
+                                                <div
+                                                    class="profile justify-content-center justify-content-md-start justify-content-lg-start ">
+                                                    <div
+                                                        class="avatar-upload justify-content-center justify-content-md-start justify-content-lg-start my-3 ms-auto ms-md-0 ms-lg-0 ">
+                                                        <div class="avatar-edit">
+                                                            <input type="file" id="imageUpload"
+                                                                accept=".png, .jpg, .jpeg">
+                                                            <label for="imageUpload"></label>
+                                                        </div>
+                                                        <div class="avatar-preview ">
+                                                            <img src="https://picsum.photos/150"
+                                                                class="rounded-circle shadow-2" alt="picture"
+                                                                width="150" height="150" id="imagePreview">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </figure>
 
@@ -168,7 +182,7 @@
                                             <div class="col-7 col-s-7">
                                                 <div class="form-outline mb-4">
                                                     <input type="tel" minlength="10" maxlength="13" name="phone"
-                                                        id="phone" class="form-control" value="082121491054" />
+                                                        id="phone" class="form-control" value="+62 82121491054" />
                                                     <label class="form-label" for="phone">phone</label>
                                                 </div>
                                             </div>
@@ -346,7 +360,7 @@
                                 <h5 class="fw-bold">Enter your account password</h5>
                                 <div class="row g-0">
                                     <p class="note note-danger shadow-2">
-                                        <strong>Note :</strong> Are you sure want to deactive your account ?
+                                        <strong>Note :</strong> Put your password to make sure it is your account
                                     </p>
                                     <div class="col-12 col-s-12">
                                         <label class="fw-bold" for="verify-password">Password</label>
