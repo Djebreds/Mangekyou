@@ -1,4 +1,4 @@
-<aside class="l-navbar showed" id="nav-bar">
+<aside class="l-navbar" id="nav-bar">
     <nav class="nav">
         <div>
             <div class="logo">
@@ -14,10 +14,10 @@
                     <span class="nav__name">Dashboard</span>
                 </a>
                 <div class="accordion">
-                    <a href="#" class="hstack gap-4 m-4">
-                        <i class='i-arrow rotate nav__icon' id="arrows1"></i>
-                        <span class="accordion-name">Customers</span>
-                    </a>
+                    <button type="button" href="#" class="btn btn-link d-flex gap-4" style="width: 100%">
+                        <i class='i-arrow rotate nav__icon ' id="arrows1"></i>
+                        <span class="accordion-name text-capitalize">Customers</span>
+                    </button>
                 </div>
                 <div class="panel">
                     <a href="{{ route('admin.user') }}" class="nav__link">
@@ -69,10 +69,10 @@
                 </a>
 
                 <div class="accordion">
-                    <a href="#" class="hstack gap-4 m-4 dropdown">
+                    <button type="button" class="btn btn-link d-flex gap-4" style="width: 100%">
                         <i class='i-arrow rotate nav__icon' id="arrows2"></i>
-                        <span class="accordion-name">Pages</span>
-                    </a>
+                        <span class="accordion-name text-capitalize">Pages</span>
+                    </button>
                 </div>
                 <div class="panel">
                     <a href="{{ route('admin.landing-page') }}" class="nav__link">

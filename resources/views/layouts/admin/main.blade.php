@@ -18,7 +18,9 @@
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- MDB -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+
 
     <!----------------- Custom Styling ---------------->
     <link rel="stylesheet" href="{{ asset('css/admin-style/app.css') }}">
@@ -28,12 +30,13 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"
         integrity="sha256-oZEaXgWqxLmr12VzCK9eGOuHIi3XPZ/KsJXXFjtyvZA=" crossorigin="anonymous"></script>
 
+
     <title>@yield('title')</title>
 </head>
 
-<body id="body-pd" class="body-pd">
+<body id="body-pd">
     <!-- header nav -->
-    <header class="header shadow body-pd" id="header">
+    <header class="header shadow " id="header">
         <div class="header__toggle">
             <i class='i-menu' id="header-toggle"></i>
         </div>
@@ -95,14 +98,17 @@
             </div>
         </div>
     </header>
+    <!-- end header nav  -->
 
     <!-- sidebar -->
     @include('layouts.admin.partials.sidebar')
+    <!-- end sidebar -->
 
     <!-- content main -->
     <main class="main">
         @yield('content')
     </main>
+    <!-- end content -->
 
     <!-- footer -->
     <footer class="text-center">
@@ -110,31 +116,38 @@
             Copyright © Tohoku 2022
         </div>
     </footer>
+    <!-- end footer -->
 
     <!--------------- external javascript --------------->
     <!-- Jquery Library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Jquery for dataTables -->
+
+
+    <!-- Javascirpt library custome datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    {{-- <!-- Jquery for dataTables -->
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    {{-- <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> --}}
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- echart library javascript -->
-    <script
-        src="https://cdn.jsdelivr.net/combine/npm/echarts@5.3.2/renderers.min.js,npm/echarts@5.3.2/features.min.js,npm/echarts@5.3.2/core.min.js">
-    </script>
+    <!-- library list.js -->
+
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
 
     <!--------------- custome javascript --------------->
     <script src="{{ asset('js/admin-script/app.js') }}"></script>
-
-    {{-- <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable({});
-        });
-    </script> --}}
     <script src="{{ asset('js/admin-script/chart/dashboard.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+
+    <script>
+        var userList = new List('users', {
+            valueNames: ['name', 'role', 'phone', 'status'],
+            page: 10,
+            pagination: true
+        });
+    </script>
 
     {{-- <script src="{!! mix('js/app.js') !!}"></script> --}}
     {{-- <script src="{{ asset('js/admin-script/echart.js') }}"></script> --}}
