@@ -1,0 +1,24 @@
+nav {
+    height: 85px;
+}
+
+.btn-green {
+    background-color: #44A1A0;
+    border-color: #44A1A0;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #247B7B;
+    border-color: #247B7B;
+    color: white;
+}
+
+.vector-301 {
+    position: absolute;
+    width: 2451.63px;
+    height: 1071.01px;
+    left: -433.63px;
+    top: -102.31px;
+    background: linear-gradient(181.31deg, rgba(217, 217, 217, 0) -8.98%, #44A1A0 107.42%);
+}
